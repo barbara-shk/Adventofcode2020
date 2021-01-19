@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fs = require('fs');
+const field = fs.readFileSync('input.txt', {encoding: 'utf-8'}).split('\n').filter(x=> x).map(x=>parseInt(x));
+
+const bigField = field.map((row) => row.repeat(5));
+console.log(bigField);
+    </script>
+</body>
+</html>
